@@ -26,8 +26,29 @@
     </style>
   </head>
   <body>
-    <ul>
-      <li>
+    <div class="carousel">
+      <fieldset class="controls">
+        <legend>carousel controls</legend>
+        <div class="control">
+          <button data-caraousel-direction="previous">previous</button>
+        </div>
+        <div class="control">
+          <input type="radio" name="testimonials" id="testimonial_1" /><label
+            for="testimonial_1"
+            ><span>show panel</span>Testimonial 1</label
+          >
+        </div>
+        <div class="control">
+          <input type="radio" name="testimonials" id="testimonial_2" /><label
+            for="testimonial_2"
+            ><span>show panel</span>Testimonial 2</label
+          >
+        </div>
+        <div class="control">
+          <button data-caraousel-direction="next">next</button>
+        </div>
+      </fieldset>
+      <div class="panel" id="testimonial__1_panel">
         <blockquote>
           <p>
             “ I’ve been interested in coding for a while but never taken the
@@ -37,8 +58,8 @@
           <cite> Tanya Sinclair</cite>
           UX Engineer
         </blockquote>
-      </li>
-      <li>
+      </div>
+      <div class="panel" id="testimonial_2_panel">
         <blockquote>
           <p>
             “ If you want to lay the best foundation possible I’d recommend
@@ -50,8 +71,8 @@
           <cite>John Tarkpor</cite>
           Junior Front-end Developer
         </blockquote>
-      </li>
-    </ul>
+      </div>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
