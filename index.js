@@ -51,6 +51,9 @@ function setRadioItem(currentActive, newActive, inputControls, panels) {
 }
 
 function setPanels(currentActive, newActive, panels) {
-  panels[newActive - 1].style.display = "block";
-  panels[currentActive - 1].style.display = "none";
+  // panels[newActive - 1].style.display = "flex";
+  // panels[currentActive - 1].style.display = "none";
+
+  panels[newActive - 1].classList.toggle("none");
+  panels[currentActive - 1].classList.toggle("none");
 }
